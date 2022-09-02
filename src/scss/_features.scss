@@ -1,0 +1,106 @@
+section#features {
+    .wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-row-gap: 92px;
+        justify-content: space-between;
+
+
+        .row {
+            display: flex;
+            
+            .col {
+                
+                &:nth-child(even) {
+                    margin-left: 30px;
+                }
+
+                img {
+                    max-width: 60px;
+                    min-height: 60px;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                p {
+                    max-width: 372px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $text-gray;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section#features {
+
+        .wrapper {
+    
+            .row {
+                
+                .col {
+                        
+                    img {
+                        max-width: 50px;
+                        min-height: 50px;
+                    }
+    
+                    h4 {
+                        font-size: 24px;
+                        line-height: 30px;                        
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        line-height: 160%;
+                        max-width: 313px;                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    section#features {
+
+        .wrapper {
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto;
+            grid-row-gap: 40px;
+            
+            .row {
+                .col {
+                    img {
+                        max-width: 35px;
+                        min-height: 35px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 160%;
+                        margin-top: 10px;
+                        max-width: 70%;
+                    }
+                    
+                    &:nth-child(even) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }    
+}
